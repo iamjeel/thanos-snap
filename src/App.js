@@ -3,10 +3,17 @@ import './App.css';
 
 function App() {
   const [result, setResult] = useState(null);
+  const [animate, setAnimate] = useState(false);
 
   const handleSnap = () => {
+    setAnimate(false);  // Reset animation state
     const fate = Math.random() > 0.5 ? 'spared' : 'snapped';
-    setResult(fate);
+    
+    // Set animation and result with a short delay
+    setTimeout(() => {
+      setResult(fate);
+      setAnimate(true);
+    }, 100);
   };
 
   return (
@@ -15,7 +22,7 @@ function App() {
       <button onClick={handleSnap}>Snap Your Fate</button>
       
       {result && (
-        <div className={`result ${result}`}>
+        <div className={`result ${result} ${animate ? 'animate' : ''}`}>
           {result === 'spared' ? (
             <h2>You were spared! 🌟</h2>
           ) : (
