@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/thanos-snap/static/css/main.44317f3b.css",
+    "main.js": "/thanos-snap/static/js/main.5972964a.js",
+    "static/js/453.206bc698.chunk.js": "/thanos-snap/static/js/453.206bc698.chunk.js",
+    "index.html": "/thanos-snap/index.html",
+    "main.44317f3b.css.map": "/thanos-snap/static/css/main.44317f3b.css.map",
+    "main.5972964a.js.map": "/thanos-snap/static/js/main.5972964a.js.map",
+    "453.206bc698.chunk.js.map": "/thanos-snap/static/js/453.206bc698.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44317f3b.css",
+    "static/js/main.5972964a.js"
+  ]
+}
